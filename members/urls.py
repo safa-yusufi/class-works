@@ -1,5 +1,7 @@
-from django.urls import path
+from django.urls import URLPattern, path
 from . import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+URLPattern += staticfiles_urlpatterns()
 
 urlpatterns = [
     path('members/', views.members, name='members'),
