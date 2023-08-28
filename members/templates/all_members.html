@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head><link rel="stylesheet" href="{% static 'myfirst.css' %}"></head>
+  
+<body>
+<div class="nav_bar">
+  <span>home page</span>
+  <span>about us</span>
+  <span> contact us</span>
+  <span></span>
+</div>
+
+<h1>Members</h1>
+  
+<ul>
+  {% for x in mymembers %}
+    <li><span><img class="profile-image" src="{%static 'images/picture1.jpg'%}" alt=""></span>{{ x.firstname }} {{ x.lastname }}<a href="details/{{ x.id }}"> view</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>

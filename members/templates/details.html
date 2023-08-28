@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+    <title>members details</title>
+</head>
+ 
+<body class="details">
+
+<h1><span><img class="profile-image" src="{%static 'images/picture1.jpg'%}" alt=""></span>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+  
+<p>Phone: {{ mymember.phone }}</p>
+<p>Member since: {{ mymember.joined_date }}</p>
+
+<p>Back to <a href="/members">Members</a></p>
+
+</body>
+</html>

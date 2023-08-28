@@ -1,0 +1,25 @@
+body {
+    background-color: lightblue;
+    font-family: verdana;
+  }
+  .details{
+    background-color: #683f97;
+  }
+  li{
+    color: rgb(106, 56, 131);
+    padding: 0 10px;
+    background-color: #b3b3b3;
+    list-style: decimal;
+  }
+.profile-image{
+width: 30px;
+height: 30px;
+border-radius: 50px;
+border:2px solid grey;
+}
+.nav_bar{
+    background-color: #615d5d;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+}
